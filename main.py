@@ -1,8 +1,9 @@
-import paho.mqtt.client as mqtt
-from random import randint
-from secrets import secrets
 import time
-import threading
+from random import randint
+
+import paho.mqtt.client as mqtt
+
+from secrets import secrets
 
 devices = [
     {
