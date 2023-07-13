@@ -64,11 +64,11 @@ for device in devices:
 while True:
     for client in clients:
         pya = randint(0, 1)
-        ppm = randint(0, 40 )
+       # ppm = randint(0, 40)
         payload = "{"
-        payload += "\"PPM2\":" + str(ppm) + ","
-        payload += "\"PYA1\":" + str(pya)
+        #payload += "\"PPM2\":" + str(ppm) + ","
+        payload += "\"PYA1\":" + str(0)
         payload += "}"
         ret = client.publish("v1/devices/me/telemetry", payload)
         print(payload)
-    time.sleep(20)
+    time.sleep(10)
